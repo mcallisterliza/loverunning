@@ -167,6 +167,7 @@ main {
 /*Gallery page */
 #photos img {
     width: 100%;
+    line-height: 1em;
 }
 
 #photos {
@@ -214,6 +215,14 @@ main {
 
 #times h3{
     color: #fafafa;
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -276,6 +285,10 @@ main {
         align-self: flex-end;
     }
 
+    #photos {
+        column-count: 3;
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -310,5 +323,8 @@ main {
 
     #benefits-physical > div {
         align-self: flex-end;
+    }
+    #photos {
+        column-count: 4;
     }
 }
